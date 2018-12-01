@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import img from './welcome.jpg'
+import {Link} from 'react-router-dom';
+import img from './giphy.gif';
 
 class Welcome extends Component {
   render() {
@@ -9,8 +10,8 @@ class Welcome extends Component {
       <div className="container" id="welcomeForm">
       <img src={img} alt="." />
       <br />
-        <button type="button" className="btn btn-danger mt-3 float-left" id="LoginButton" onclick="change">Login</button>
-        <button type="button" className="btn btn-danger mt-3 float-right" id="signupButton" onclick="change">SignUp</button>
+        <button type="button" className="btn btn-danger mt-3 float-left" id="LoginButton" onclick="change"><Link to="/login">Login</Link></button>
+        <button type="button" className="btn btn-danger mt-3 float-right" id="signupButton" onclick="change"><Link to="/signupForm">Sign Up</Link></button>
       </div>
       </div>
     </div>

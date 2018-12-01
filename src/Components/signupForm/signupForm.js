@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 class SignupForm extends Component {
   render() {
@@ -70,8 +71,8 @@ class SignupForm extends Component {
                     </select>
                 </div>
               <div className="col-sm-12" id="signupButtons">
-                <button type="submit" id="submitSignup" className="btn btn-primary col-md-2 float-left">Sign Up</button>
-                <button type="button" className="btn col-md-2 float-right" id="goBackWelcomeSignUp">Go Back</button>
+                <button type="submit" id="submitSignup" className="btn btn-primary col-md-2 float-left"><Link to="/success">Sign Up</Link></button>
+                <button type="button" className="btn col-md-2 float-right" id="goBackWelcomeSignUp"><Link to="/welcome">Go Back</Link></button>
               </div>
         </form>
     </div>

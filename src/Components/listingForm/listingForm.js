@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 class ListingForm extends Component {
   render() {
@@ -128,8 +129,8 @@ class ListingForm extends Component {
                     </select>
                 </div>
                 <div className="col-sm-12" id="listingButtons">
-                  <button type="submit" id="submitListing" className="btn btn-primary col-md-3 float-left">Create Listing</button>
-                  <button type="button" className="btn col-md-2 float-right" id="goBackListing">Go Back</button>
+                  <button type="submit" id="submitListing" className="btn btn-primary col-md-3 float-left"><Link to="/renderListing">Create Listing</Link></button>
+                  <button type="button" className="btn col-md-2 float-right" id="goBackListing"><Link to="/renderListing">Go Back</Link></button>
                 </div>
             </form>
         </div>
